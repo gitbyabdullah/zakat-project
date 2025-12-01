@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./zakat.css">
+  <title>Zakat-Calculator</title>
+</head>
+
+<body>
+  <div class="zakat-body d-flex justify-content-center align-items-center min-vh-100 bg-light">
+    <div class="zakat p-5 rounded shadow-lg">
+      <div class="head text-center mb-4">
+        <h1>Find Your Zakat</h1>
+      </div>
+
+      <div class="body d-flex flex-wrap justify-content-center align-items-center gap-4">
+        <div class="d-flex flex-column gap-3">
+          <input type="text" id="name" class="form-control" placeholder="Cash (Your Name)">
+          <input type="number" id="cash" class="form-control" placeholder="Cash (PKR)">
+          <input type="number" id="bankBalance" class="form-control" placeholder="Bank Balance (PKR)">
+          <input type="number" id="goldValue" class="form-control" placeholder="Gold Value (PKR)">
+        </div>
+
+        <div class="d-flex flex-column gap-3">
+          <input type="number" id="silverValue" class="form-control" placeholder="Silver Value (PKR)">
+          <input type="number" id="investments" class="form-control" placeholder="Investments (PKR)">
+          <input type="number" id="businessGoods" class="form-control" placeholder="Business Goods (PKR)">
+          <input type="number" id="debts" class="form-control" placeholder="Debts / Liabilities (PKR)">
+        </div>
+      </div>
+
+      <div class="submit d-flex justify-content-center">
+        <input type="button" id="submitBtn" class="sub-btn" value="Submit">
+      </div>
+    </div>
+  </div>
+
+  <script src="./logic.js"></script>
+</body>
+
+
+
+</html>
